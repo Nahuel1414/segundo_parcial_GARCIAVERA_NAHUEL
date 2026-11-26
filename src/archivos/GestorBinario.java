@@ -1,7 +1,7 @@
 package archivos;
 
 import examen.Carrito;
-import examen.Producto;
+import modelo.Producto;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;

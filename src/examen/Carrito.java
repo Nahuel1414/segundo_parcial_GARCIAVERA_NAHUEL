@@ -1,5 +1,6 @@
 package examen;
 
+import modelo.Producto;
 import java.io.Serializable;
 
 public class Carrito implements Serializable{
@@ -29,5 +30,13 @@ public class Carrito implements Serializable{
     
     public double getSubtotal() {
         return producto.getPrecio() * cantidad;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Producto: ").append(producto).append(System.lineSeparator());
+        sb.append("Cantidad=").append(cantidad);
+        return sb.toString();
     }
 }

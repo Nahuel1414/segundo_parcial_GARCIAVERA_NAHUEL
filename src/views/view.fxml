@@ -9,33 +9,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewController">
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewController">
    <children>
-      <TableView fx:id="tabla" layoutX="14.0" layoutY="82.0" prefHeight="200.0" prefWidth="211.0">
+      <TableView fx:id="tabla" layoutX="14.0" layoutY="84.0" prefHeight="316.0" prefWidth="288.0">
         <columns>
-          <TableColumn fx:id="cNombre" prefWidth="68.0" text="Nombre" />
-          <TableColumn fx:id="cPrecio" prefWidth="73.0" text="Precio" />
-          <TableColumn fx:id="cStock" prefWidth="84.0" text="Stock" />
+          <TableColumn fx:id="cNombre" prefWidth="101.0" text="Nombre" />
+          <TableColumn fx:id="cPrecio" prefWidth="88.0" text="Precio" />
+          <TableColumn fx:id="cStock" prefWidth="98.0" text="Stock" />
         </columns>
       </TableView>
-      <TextField fx:id="txtCant" layoutX="268.0" layoutY="159.0" prefHeight="25.0" prefWidth="65.0" />
-      <Label fx:id="lblCant" layoutX="236.0" layoutY="162.0" text="Cant:">
+      <TextField fx:id="txtCant" layoutX="354.0" layoutY="150.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label fx:id="lblCant" layoutX="309.0" layoutY="153.0" text="Cant:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btnAgregar" layoutX="268.0" layoutY="200.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="65.0" text="Agregar" />
-      <Label fx:id="lblCarrito" layoutX="358.0" layoutY="57.0" text="Carrito">
+      <Button fx:id="btnAgregar" layoutX="354.0" layoutY="184.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="65.0" text="Agregar" />
+      <Label fx:id="lblCarrito" layoutX="465.0" layoutY="53.0" text="Carrito">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btnConfirmar" layoutX="393.0" layoutY="303.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar compra">
+      <Button fx:id="btnConfirmar" layoutX="465.0" layoutY="303.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar compra">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <ListView fx:id="listCarrito" layoutX="359.0" layoutY="84.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="listCarrito" layoutX="465.0" layoutY="84.0" prefHeight="200.0" prefWidth="288.0" />
       <Label fx:id="lblMensaje" layoutX="287.0" layoutY="26.0">
          <font>
             <Font size="18.0" />

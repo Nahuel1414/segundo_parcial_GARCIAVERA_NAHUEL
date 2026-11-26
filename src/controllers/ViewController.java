@@ -2,7 +2,7 @@ package controllers;
 
 import archivos.GestorBinario;
 import examen.Carrito;
-import examen.Producto;
+import modelo.Producto;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -75,9 +75,7 @@ public class ViewController implements Initializable {
     
     private void actualizarTabla() {
         tabla.getItems().clear();
-        for(Producto p : productos) {
-            tabla.getItems().add(p);
-        }
+        tabla.getItems().addAll(productos);
     }
     
     public void agregar() {
@@ -109,6 +107,7 @@ public class ViewController implements Initializable {
         carrito.add(new Carrito(cantidad, seleccionado));
         
         actualizarTabla();
+        actualizarCarrito();
     }
     
     private void mostrarMensaje(String mensaje){
